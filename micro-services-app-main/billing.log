@@ -1,0 +1,139 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/Users/mac/.m2/wrapper/dists/apache-maven-3.9.9/3477a4f1/lib/jansi-2.4.1.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/Users/mac/.m2/wrapper/dists/apache-maven-3.9.9/3477a4f1/lib/guava-33.2.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< net.reda:billing-service >----------------------
+[INFO] Building billing-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ billing-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ billing-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ billing-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ billing-service ---
+[INFO] skip non existing resourceDirectory /Users/mac/Desktop/micro-services-app-main/billing-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ billing-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ billing-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ billing-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-11T12:06:30.007+01:00  INFO 99312 --- [billing-service] [           main] n.r.b.BillingServiceApplication          : Starting BillingServiceApplication using Java 24 with PID 99312 (/Users/mac/Desktop/micro-services-app-main/billing-service/target/classes started by mac in /Users/mac/Desktop/micro-services-app-main/billing-service)
+2025-12-11T12:06:30.008+01:00  INFO 99312 --- [billing-service] [           main] n.r.b.BillingServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T12:06:30.032+01:00  INFO 99312 --- [billing-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9999
+2025-12-11T12:06:30.032+01:00  INFO 99312 --- [billing-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=billing-service, profiles=[default], label=null, version=null, state=null
+2025-12-11T12:06:30.557+01:00  INFO 99312 --- [billing-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T12:06:30.675+01:00  INFO 99312 --- [billing-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+2025-12-11T12:06:30.818+01:00  INFO 99312 --- [billing-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79b34b71-4560-38a6-a192-82a05bf88357
+2025-12-11T12:06:30.879+01:00  WARN 99312 --- [billing-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-12-11T12:06:30.880+01:00  WARN 99312 --- [billing-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/mac/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2025-12-11T12:06:31.001+01:00  INFO 99312 --- [billing-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-12-11T12:06:31.011+01:00  INFO 99312 --- [billing-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T12:06:31.011+01:00  INFO 99312 --- [billing-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-11T12:06:31.048+01:00  INFO 99312 --- [billing-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-11T12:06:31.048+01:00  INFO 99312 --- [billing-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1010 ms
+2025-12-11T12:06:31.065+01:00  INFO 99312 --- [billing-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T12:06:31.161+01:00  INFO 99312 --- [billing-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:billing-db user=SA
+2025-12-11T12:06:31.166+01:00  INFO 99312 --- [billing-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T12:06:31.176+01:00  INFO 99312 --- [billing-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:billing-db'
+2025-12-11T12:06:31.237+01:00  INFO 99312 --- [billing-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T12:06:31.261+01:00  INFO 99312 --- [billing-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-11T12:06:31.275+01:00  INFO 99312 --- [billing-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-11T12:06:31.401+01:00  INFO 99312 --- [billing-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T12:06:31.852+01:00  INFO 99312 --- [billing-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table bill (id bigint generated by default as identity, billing_date timestamp(6), customer_id bigint not null, primary key (id))
+Hibernate: create table product_item (id bigint generated by default as identity, product_id varchar(255), quantity integer not null, unit_price float(53) not null, bill_id bigint, primary key (id))
+Hibernate: alter table if exists product_item add constraint FKbku0nu073sm2unt6byfmgkte1 foreign key (bill_id) references bill
+2025-12-11T12:06:31.885+01:00  INFO 99312 --- [billing-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T12:06:32.036+01:00  WARN 99312 --- [billing-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T12:06:32.130+01:00  INFO 99312 --- [billing-service] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'CUSTOMER-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-12-11T12:06:32.156+01:00  INFO 99312 --- [billing-service] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'INVENTORY-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-12-11T12:06:32.443+01:00  INFO 99312 --- [billing-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-12-11T12:06:32.454+01:00  WARN 99312 --- [billing-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-11T12:06:32.470+01:00  INFO 99312 --- [billing-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-11T12:06:32.480+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-11T12:06:32.482+01:00  INFO 99312 --- [billing-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:06:32.485+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-11T12:06:32.485+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-11T12:06:32.485+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-11T12:06:32.485+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-11T12:06:32.485+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-11T12:06:32.485+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-11T12:06:32.485+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-11T12:06:32.632+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-11T12:06:32.633+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-11T12:06:32.634+01:00  INFO 99312 --- [billing-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-11T12:06:32.635+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1765451192635 with initial instances count: 3
+2025-12-11T12:06:32.637+01:00  INFO 99312 --- [billing-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING-SERVICE with eureka with status UP
+2025-12-11T12:06:32.638+01:00  INFO 99312 --- [billing-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1765451192638, current=UP, previous=STARTING]
+2025-12-11T12:06:32.638+01:00  INFO 99312 --- [billing-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING-SERVICE/10.40.37.210:billing-service:8083: registering service...
+2025-12-11T12:06:32.645+01:00  INFO 99312 --- [billing-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-12-11T12:06:32.645+01:00  INFO 99312 --- [billing-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-12-11T12:06:32.653+01:00  INFO 99312 --- [billing-service] [           main] n.r.b.BillingServiceApplication          : Started BillingServiceApplication in 3.042 seconds (process running for 3.204)
+2025-12-11T12:06:32.657+01:00  INFO 99312 --- [billing-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING-SERVICE/10.40.37.210:billing-service:8083 - registration status: 204
+Hibernate: insert into bill (billing_date,customer_id,id) values (?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+Hibernate: insert into bill (billing_date,customer_id,id) values (?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+Hibernate: insert into bill (billing_date,customer_id,id) values (?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+Hibernate: insert into product_item (bill_id,product_id,quantity,unit_price,id) values (?,?,?,?,default)
+2025-12-11T12:07:17.494+01:00  INFO 99312 --- [billing-service] [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T12:07:17.495+01:00  INFO 99312 --- [billing-service] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T12:07:17.497+01:00  INFO 99312 --- [billing-service] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select b1_0.id,b1_0.billing_date,b1_0.customer_id from bill b1_0 offset ? rows fetch first ? rows only
+Hibernate: select b1_0.id,b1_0.billing_date,b1_0.customer_id from bill b1_0 offset ? rows fetch first ? rows only
+Hibernate: select b1_0.id,b1_0.billing_date,b1_0.customer_id from bill b1_0 offset ? rows fetch first ? rows only
+Hibernate: select b1_0.id,b1_0.billing_date,b1_0.customer_id from bill b1_0 offset ? rows fetch first ? rows only
+2025-12-11T12:11:32.488+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select b1_0.id,b1_0.billing_date,b1_0.customer_id from bill b1_0 offset ? rows fetch first ? rows only
+2025-12-11T12:16:32.475+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:21:32.464+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:26:32.572+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:31:32.572+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:37:40.384+01:00  WARN 99312 --- [billing-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m38s888ms).
+2025-12-11T13:11:17.347+01:00  WARN 99312 --- [billing-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m36s967ms).
+2025-12-11T13:19:45.422+01:00  WARN 99312 --- [billing-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m28s75ms).
+2025-12-11T13:20:46.469+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:25:46.478+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:30:46.483+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:35:46.551+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:40:46.559+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:45:46.567+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:50:46.577+01:00  INFO 99312 --- [billing-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

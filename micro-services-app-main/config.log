@@ -1,0 +1,115 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/Users/mac/.m2/wrapper/dists/apache-maven-3.9.9/3477a4f1/lib/jansi-2.4.1.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/Users/mac/.m2/wrapper/dists/apache-maven-3.9.9/3477a4f1/lib/guava-33.2.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< net.reda:config-service >-----------------------
+[INFO] Building config-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ config-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ config-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ config-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ config-service ---
+[INFO] skip non existing resourceDirectory /Users/mac/Desktop/micro-services-app-main/config-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ config-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ config-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ config-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-11T12:05:49.511+01:00  INFO 98770 --- [config-service] [           main] n.r.c.ConfigServiceApplication           : Starting ConfigServiceApplication using Java 24 with PID 98770 (/Users/mac/Desktop/micro-services-app-main/config-service/target/classes started by mac in /Users/mac/Desktop/micro-services-app-main/config-service)
+2025-12-11T12:05:49.512+01:00  INFO 98770 --- [config-service] [           main] n.r.c.ConfigServiceApplication           : The following 1 profile is active: "native"
+2025-12-11T12:05:49.997+01:00  INFO 98770 --- [config-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=175b272b-dbcb-32d3-96e0-e2354ab47915
+2025-12-11T12:05:50.030+01:00  WARN 98770 --- [config-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-12-11T12:05:50.031+01:00  WARN 98770 --- [config-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/mac/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2025-12-11T12:05:50.137+01:00  INFO 98770 --- [config-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9999 (http)
+2025-12-11T12:05:50.148+01:00  INFO 98770 --- [config-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T12:05:50.148+01:00  INFO 98770 --- [config-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-11T12:05:50.178+01:00  INFO 98770 --- [config-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-11T12:05:50.178+01:00  INFO 98770 --- [config-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2025-12-11T12:05:50.559+01:00  INFO 98770 --- [config-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-12-11T12:05:50.637+01:00  WARN 98770 --- [config-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-11T12:05:50.641+01:00  INFO 98770 --- [config-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-11T12:05:50.662+01:00  INFO 98770 --- [config-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-11T12:05:50.672+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-11T12:05:50.674+01:00  INFO 98770 --- [config-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:05:50.677+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-11T12:05:50.677+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-11T12:05:50.677+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-11T12:05:50.677+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-11T12:05:50.677+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-11T12:05:50.677+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-11T12:05:50.677+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-11T12:05:50.955+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-11T12:05:50.956+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-11T12:05:50.956+01:00  INFO 98770 --- [config-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-11T12:05:50.958+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1765451150957 with initial instances count: 0
+2025-12-11T12:05:50.959+01:00  INFO 98770 --- [config-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONFIG-SERVICE with eureka with status UP
+2025-12-11T12:05:50.959+01:00  INFO 98770 --- [config-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1765451150959, current=UP, previous=STARTING]
+2025-12-11T12:05:50.960+01:00  INFO 98770 --- [config-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVICE/10.40.37.210:config-service:9999: registering service...
+2025-12-11T12:05:50.965+01:00  INFO 98770 --- [config-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9999 (http) with context path '/'
+2025-12-11T12:05:50.966+01:00  INFO 98770 --- [config-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9999
+2025-12-11T12:05:50.979+01:00  INFO 98770 --- [config-service] [           main] n.r.c.ConfigServiceApplication           : Started ConfigServiceApplication in 1.655 seconds (process running for 1.808)
+2025-12-11T12:05:51.021+01:00  INFO 98770 --- [config-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVICE/10.40.37.210:config-service:9999 - registration status: 204
+2025-12-11T12:06:09.821+01:00  INFO 98770 --- [config-service] [nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T12:06:09.821+01:00  INFO 98770 --- [config-service] [nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T12:06:09.824+01:00  INFO 98770 --- [config-service] [nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-11T12:06:09.867+01:00  INFO 98770 --- [config-service] [nio-9999-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/Users/mac/Desktop/micro-services-app-main/config-repo/customer-service.properties]' via location 'file:///Users/mac/Desktop/micro-services-app-main/config-repo/'
+2025-12-11T12:06:09.867+01:00  INFO 98770 --- [config-service] [nio-9999-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/Users/mac/Desktop/micro-services-app-main/config-repo/application.properties]' via location 'file:///Users/mac/Desktop/micro-services-app-main/config-repo/'
+2025-12-11T12:06:19.764+01:00  INFO 98770 --- [config-service] [nio-9999-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/Users/mac/Desktop/micro-services-app-main/config-repo/inventory-service.properties]' via location 'file:///Users/mac/Desktop/micro-services-app-main/config-repo/'
+2025-12-11T12:06:19.764+01:00  INFO 98770 --- [config-service] [nio-9999-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/Users/mac/Desktop/micro-services-app-main/config-repo/application.properties]' via location 'file:///Users/mac/Desktop/micro-services-app-main/config-repo/'
+2025-12-11T12:06:20.954+01:00  INFO 98770 --- [config-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-11T12:06:20.955+01:00  INFO 98770 --- [config-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-11T12:06:20.955+01:00  INFO 98770 --- [config-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-11T12:06:20.955+01:00  INFO 98770 --- [config-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-11T12:06:20.955+01:00  INFO 98770 --- [config-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-11T12:06:20.955+01:00  INFO 98770 --- [config-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-12-11T12:06:20.955+01:00  INFO 98770 --- [config-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-11T12:06:20.995+01:00  INFO 98770 --- [config-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-11T12:06:29.907+01:00  INFO 98770 --- [config-service] [nio-9999-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/Users/mac/Desktop/micro-services-app-main/config-repo/billing-service.properties]' via location 'file:///Users/mac/Desktop/micro-services-app-main/config-repo/'
+2025-12-11T12:06:29.907+01:00  INFO 98770 --- [config-service] [nio-9999-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/Users/mac/Desktop/micro-services-app-main/config-repo/application.properties]' via location 'file:///Users/mac/Desktop/micro-services-app-main/config-repo/'
+2025-12-11T12:10:50.684+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:15:50.677+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:20:50.669+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:25:50.761+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:30:50.769+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:20:04.667+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:25:04.673+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:30:04.677+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:35:04.683+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:40:04.755+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:45:04.764+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:50:04.777+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:55:04.796+01:00  INFO 98770 --- [config-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

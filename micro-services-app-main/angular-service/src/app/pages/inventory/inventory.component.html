@@ -1,0 +1,75 @@
+<div class="container fade-in">
+    <h2 class="page-title">Inventory</h2>
+
+    <div *ngIf="loading" class="loading">Loading inventory...</div>
+    <div *ngIf="error" class="error">{{ error }}</div>
+
+    <div *ngIf="!loading && !error" class="card table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td style="width: 80px; color: var(--text-secondary)">
+                        <span [title]="product.id">{{ product.id | slice:0:8 }}...</span>
+                    </td>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 0.75rem">
+                            <div class="product-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m7.5 4.27 9 5.15" />
+                                    <path
+                                        d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                                    <path d="m3.3 7 8.7 5 8.7-5" />
+                                    <path d="M12 22v-9" />
+                                </svg>
+                            </div>
+                            <span style="font-weight: 500">{{ product.name }}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div
+                            style="display: flex; align-items: center; gap: 0.25rem; color: var(--success); font-weight: 600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="12" y1="2" x2="12" y2="22" />
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                            {{ product.price | number:'1.2-2' }}
+                        </div>
+                    </td>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 0.5rem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--text-secondary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="12" y1="20" x2="12" y2="10" />
+                                <line x1="18" y1="20" x2="18" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="16" />
+                            </svg>
+                            {{ product.quantity }}
+                        </div>
+                    </td>
+                    <td>
+                        <span class="badge" [ngClass]="isLowStock(product.quantity) ? 'badge-danger' : 'badge-success'">
+                            {{ isLowStock(product.quantity) ? 'Low Stock' : 'In Stock' }}
+                        </span>
+                    </td>
+                </tr>
+                <tr *ngIf="products.length === 0">
+                    <td colspan="5" style="text-align: center; padding: 2rem">No products found</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

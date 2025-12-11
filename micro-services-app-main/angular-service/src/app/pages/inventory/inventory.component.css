@@ -1,0 +1,18 @@
+.product-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(139, 92, 246, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-secondary);
+}
+
+.loading {
+    color: var(--text-secondary);
+}
+
+.error {
+    color: var(--danger);
+}

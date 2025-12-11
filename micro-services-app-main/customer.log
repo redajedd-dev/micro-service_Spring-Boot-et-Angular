@@ -1,0 +1,147 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/Users/mac/.m2/wrapper/dists/apache-maven-3.9.9/3477a4f1/lib/jansi-2.4.1.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/Users/mac/.m2/wrapper/dists/apache-maven-3.9.9/3477a4f1/lib/guava-33.2.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< net.reda:customer-service >----------------------
+[INFO] Building customer-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ customer-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ customer-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ customer-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ customer-service ---
+[INFO] skip non existing resourceDirectory /Users/mac/Desktop/micro-services-app-main/customer-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ customer-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ customer-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ customer-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-11T12:06:09.971+01:00  INFO 98985 --- [customer-service] [           main] n.r.c.CustomerServiceApplication         : Starting CustomerServiceApplication using Java 24 with PID 98985 (/Users/mac/Desktop/micro-services-app-main/customer-service/target/classes started by mac in /Users/mac/Desktop/micro-services-app-main/customer-service)
+2025-12-11T12:06:09.972+01:00  INFO 98985 --- [customer-service] [           main] n.r.c.CustomerServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T12:06:09.989+01:00  INFO 98985 --- [customer-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9999
+2025-12-11T12:06:09.989+01:00  INFO 98985 --- [customer-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=null, state=null
+2025-12-11T12:06:10.389+01:00  INFO 98985 --- [customer-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T12:06:10.459+01:00  INFO 98985 --- [customer-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2025-12-11T12:06:10.580+01:00  INFO 98985 --- [customer-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=87b53ab8-3cff-3949-b074-c878d4540044
+2025-12-11T12:06:10.728+01:00  WARN 98985 --- [customer-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-12-11T12:06:10.729+01:00  WARN 98985 --- [customer-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/mac/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2025-12-11T12:06:10.852+01:00  INFO 98985 --- [customer-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-11T12:06:10.859+01:00  INFO 98985 --- [customer-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T12:06:10.859+01:00  INFO 98985 --- [customer-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-11T12:06:10.886+01:00  INFO 98985 --- [customer-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-11T12:06:10.886+01:00  INFO 98985 --- [customer-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
+2025-12-11T12:06:10.944+01:00  INFO 98985 --- [customer-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T12:06:11.051+01:00  INFO 98985 --- [customer-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:customers-db user=SA
+2025-12-11T12:06:11.052+01:00  INFO 98985 --- [customer-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T12:06:11.058+01:00  INFO 98985 --- [customer-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customers-db'
+2025-12-11T12:06:11.164+01:00  INFO 98985 --- [customer-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T12:06:11.196+01:00  INFO 98985 --- [customer-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-11T12:06:11.215+01:00  INFO 98985 --- [customer-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-11T12:06:11.360+01:00  INFO 98985 --- [customer-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T12:06:11.772+01:00  INFO 98985 --- [customer-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table customer (id bigint generated by default as identity, email varchar(255), name varchar(255), primary key (id))
+2025-12-11T12:06:11.800+01:00  INFO 98985 --- [customer-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T12:06:11.945+01:00  WARN 98985 --- [customer-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T12:06:12.512+01:00  INFO 98985 --- [customer-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-12-11T12:06:12.540+01:00  WARN 98985 --- [customer-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-11T12:06:12.546+01:00  INFO 98985 --- [customer-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-12-11T12:06:12.584+01:00  INFO 98985 --- [customer-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-11T12:06:12.595+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-11T12:06:12.596+01:00  INFO 98985 --- [customer-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:06:12.600+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-11T12:06:12.600+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-11T12:06:12.600+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-11T12:06:12.600+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-11T12:06:12.600+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-11T12:06:12.600+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-11T12:06:12.600+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-11T12:06:12.755+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-11T12:06:12.757+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-11T12:06:12.757+01:00  INFO 98985 --- [customer-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-11T12:06:12.758+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1765451172758 with initial instances count: 1
+2025-12-11T12:06:12.762+01:00  INFO 98985 --- [customer-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2025-12-11T12:06:12.762+01:00  INFO 98985 --- [customer-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1765451172762, current=UP, previous=STARTING]
+2025-12-11T12:06:12.763+01:00  INFO 98985 --- [customer-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/10.40.37.210:customer-service:8081: registering service...
+2025-12-11T12:06:12.770+01:00  INFO 98985 --- [customer-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-11T12:06:12.770+01:00  INFO 98985 --- [customer-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-12-11T12:06:12.782+01:00  INFO 98985 --- [customer-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/10.40.37.210:customer-service:8081 - registration status: 204
+2025-12-11T12:06:12.784+01:00  INFO 98985 --- [customer-service] [           main] n.r.c.CustomerServiceApplication         : Started CustomerServiceApplication in 3.326 seconds (process running for 3.488)
+Hibernate: insert into customer (email,name,id) values (?,?,default)
+Hibernate: insert into customer (email,name,id) values (?,?,default)
+Hibernate: insert into customer (email,name,id) values (?,?,default)
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0
+======================
+1
+Mohamed
+med@gmail.com
+=======================
+======================
+2
+Imane
+imane@gmail.com
+=======================
+======================
+3
+Yassine
+yassine@gmail.com
+=======================
+2025-12-11T12:06:47.786+01:00  INFO 98985 --- [customer-service] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T12:06:47.787+01:00  INFO 98985 --- [customer-service] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T12:06:47.790+01:00  INFO 98985 --- [customer-service] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+2025-12-11T12:11:12.604+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.email,c1_0.name from customer c1_0 offset ? rows fetch first ? rows only
+2025-12-11T12:16:12.597+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:21:12.591+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:26:12.671+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:31:12.675+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T12:36:38.035+01:00  WARN 98985 --- [customer-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m56s624ms).
+2025-12-11T12:53:20.590+01:00  WARN 98985 --- [customer-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m42s553ms).
+2025-12-11T13:19:25.337+01:00  WARN 98985 --- [customer-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m4s752ms).
+2025-12-11T13:20:26.570+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:25:26.579+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:30:26.582+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:35:26.585+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:40:26.674+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:45:26.679+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-11T13:50:26.690+01:00  INFO 98985 --- [customer-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
